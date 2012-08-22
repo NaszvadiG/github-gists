@@ -2,6 +2,10 @@
 
 <div class="alert">This page reloads every 1 minute</div>
 
+<?php if (isset($search_term) && $search_term != ''): ?>
+    <div class="alert alert-error">Gists filtered to those containing '<?php echo $search_term; ?>' in the filename, description or code (<?php echo anchor(base_url(), 'Remove filter'); ?>)</div>
+<?php endif; ?>
+
 <?php foreach ($gists as $gist): ?>
 
     <div class="well">

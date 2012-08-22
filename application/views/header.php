@@ -10,4 +10,4 @@
 
         <div class="container">
 
-            <h2>Github public Gists as a social network</h2>
+            <h2>Github public Gists</h2>
